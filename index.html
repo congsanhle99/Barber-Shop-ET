@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>Barber Shop</title>
+</head>
+<body>
+    <section id="banner">
+         <img src="./assets/img/logo.png" class="logo" alt="logo">
+         <div class="banner__text">
+            <h1><span>H</span>air Studio</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <div class="banner__buttons">
+                <a href="#"> <span></span> Find out</a>
+                <a href="#"> <span></span> Read more</a>
+            </div>
+         </div>
+    </section>
+    <div id="slideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Meet</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="./assets/img/menu.png" id="menu" alt="menu">
+    </div>
+
+    <!-- FEATURE -->
+    <section id="feature">
+        <div class="feature__title-text">
+            <p>FEATURE</p>
+            <h2>Why you should choose us</h2>
+        </div>
+    </section>
+    <!-- END FEATURE -->
+
+    <script>
+        var menubtn = document.getElementById('menubtn');
+        var slideNav = document.getElementById('slideNav');
+        var menu = document.getElementById('menu');
+
+        slideNav.style.right == '-200px'
+
+        menubtn.onclick = function() {
+            if(slideNav.style.right == '-200px')
+            {
+                slideNav.style.right ='0';
+                menu.src = "/assets/img/close.png";
+            }
+            else
+            {
+                slideNav.style.right = '-200px';
+                menu.src = "/assets/img/menu.png";
+            }
+        }
+    </script>
+</body>
+</html>
